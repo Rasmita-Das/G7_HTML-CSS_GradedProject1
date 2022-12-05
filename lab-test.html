@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Test</title>
+        <link rel="stylesheet" href="css/lab-test.css">
+    </head>
+
+    <body>
+        <div class="textpart">
+            <form action="" id="contact-details">
+                <h2>1. Your Contact Details</h2>            
+                <input type="text" title="name" placeholder="Full Name" required>
+                <input type="text" title="name" placeholder="Patient Id if exists">
+                <br>
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                <input type="email" title="email" placeholder="Enter email id" required>
+                
+                <h2>2. Address</h2>            
+                <input type="text" title="name" placeholder="House Number" required>
+                <input type="text" title="name" placeholder="Street" required>
+                <br>
+                <input type="text" title="name" placeholder="Area" required>
+                <br>
+                
+
+                <h3>District</h3>
+                <select name="" id="ddltype">
+                    <option value="0">Choose</option>
+                    <option value="1">Cuttack</option>
+                    <option value="2">Khordha</option>
+                    <option value="3">Puri</option>
+                </select>
+                <br><br>
+
+                
+                <h3>3. Choose the Test Type</h3>            
+                    <select id="ddltype">
+                        <option value="0" disabled>Check atleast one box without fail</option>
+                        <option value="1">CBC</option>
+                        <option value="2">Complete Urine</option>
+                        <option value="3">Lipid Profile</option>
+                        <option value="4">Thyroid Stimulating Hormone(TSH)</option>
+                        <option value="5">Glucose Test</option>
+                    </select>
+                <br><br>
+
+
+                <h3>4. Do you want a hard copy of the report also?</h3>
+                <div>
+                    <input type="radio" name="my-input" id="yes" value="yes" style="width: 10%;">
+                    <label for="yes">Yes</label>
+                  
+                    <input type="radio" name="my-input" id="no" value="no" style="width: 10%;">
+                    <label for="no">No</label>
+                  </div>
+                
+                  
+                
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+                
+                <div class="datentime">
+                    <h3>5. Select Your Comfortable Date and Time</h3>
+                        <input type="date" title="Date" required style="width:200px; background-color: aquamarine;">
+                        <input type="time" title="Time" required style="width:200px; background-color: aquamarine;">
+                        <br><br>
+                </div>
+
+                
+
+                <img src="css/lab-test.jpg">
+
+
+            </form>
+        </div>
+
+        <button form="lab-form">Reset</button>
+        <button form="lab-form">Submit</button>
+
+    </body>
+</html>       
