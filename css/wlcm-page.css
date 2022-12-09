@@ -1,86 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
 body{
     height: auto;
-    background-image: 100%;
-}
-
-h1{
-    background-color: rgb(68, 66, 66);
     margin: 0%;
-    padding: 20px;
+}
+header{
+    background-color: aqua;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
-a{
-    font-family: 'Times New Roman', Times, serif;
+#navigate{
+    top: 0%;
+    position: sticky;
 }
-
-.alignboth{
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-
 .menu{
-    position: inherit;
-    margin: 0%;
-    position: fixed;
+    list-style-type: none;
+    float: right;
+    position: sticky;  
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-}
-.menu li a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-.menu li{
-    padding: 10px;
-    display: inline-block;
-}
-.menu li:hover{
+    padding: 10px 0px;  
     background-color: black;
 }
-.menu li:nth-child(2):hover #Dropdown_1, .menu li:nth-child(3):hover #Dropdown_2{
-    display: block;
+
+.menu li{
+    display: inline-block;
+    
 }
-#Dropdown_1, #Dropdown_2{
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    padding: 7px 20px;
+}
+.menu li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.menu li:nth-child(2):hover #Dropdown_1, 
+.menu li:nth-child(3):hover #Dropdown_2
+{
+    display: block;
+
+}
+#Dropdown_1, #Dropdown_2 {
     position: absolute;
     width: auto;
-    max-width: 150px;
     display: none;
-    top: 42.5px;
-    background-color: whitesmoke;
     padding: 0%;
+    background-color: lightcyan;
 }
-#Dropdown_1 li, #Dropdown_2 li{
+#Dropdown_1 li, #Dropdown_2 li {
     display: block;
+    margin-top: 20px;
 }
-#Dropdown_1 li:hover, #Dropdown_2 li:hover{
+
+#Dropdown_1 li a:hover, #Dropdown_2 li a:hover {
+    text-decoration: none;
+    color: black;
     background-color: gainsboro;
-}
-#Dropdown_1 li a, #Dropdown_2 li a{
-    color: steelblue;
-    font-size: 16px;
+    padding: 7px 20px;
+    float: left;
 }
 
-
-
-@keyframes slide{
-    0%{
-        background-image: url("../Animation/ani1.jpg");
-    }
-    25%{
-        background-image: url("../Animation/ani2.png");
-    }
-    50%{
-        background-image: url("../Animation/ani3.jpg");
-    }
-    75%{
-        background-image: url("../Animation/ani4.jpg");
-    }
-    100%{
-        background-image: url("../Animation/ani5.jpg");
-    }
+#Dropdown_1 li a, #Dropdown_2 li a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px;
+    float: left;
+    background-color: lightcyan;
 }
 
 .slide{
@@ -91,48 +84,84 @@ a{
     animation: slide 10s infinite;
     overflow: hidden;
 }
-
-
-.sliding{
-    top: 30%;
-    border: steelblue solid 2px;
-    animation: sliding 10s infinite;
+@keyframes slide {
+    0%{
+        background-image: url("images/Animation/ani1.jpg");
+    }
+    20%{
+        background-image: url("images/Animation/ani2.png");
+    }
+    40%{
+        background-image: url("images/Animation/ani2.png");
+    }
+    60%{
+        background-image: url("images/Animation/ani3.jpg");
+    }
+    80%{
+        background-image: url("images/Animation/ani4.jpg");
+    }
+    100%{
+        background-image: url("images/Animation/ani5.jpg");
+    }
+    
 }
 
-.footer{ 
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#covidCare{
+    margin: 25px;
+}
+#diabetesCare{
+    margin: 25px;
+}
+.productBox{
     width: 100%;
-    background-color: black;
-    color: white;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
+.product{
+    background-color: lightgrey;
+    width: 24%;
+    height: 250px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.product img{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product p{
+    color: blue;
+    text-align: left;
+    margin-left: 25px;
+}
+.product button{
+    padding: 10px;
+    width: 90%;
+    border: blue solid 1px;
+    border-radius: 10px;
+}
+.product button:hover{
+    padding: 15px;
+    width: 90%;
+    background-color: rgb(250, 234, 230);
+    border: rgb(0, 255, 76) solid;
+    border-radius: 10px;
+}
+.product button h3{
+    color: orangered;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-img{
-    left: 0;
-    right: 0;
-    background-repeat: repeat-y;
-    border: 2px solid steelblue;
-    max-width: 100%;
-}   
-*/
+footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+footer h5{
+    padding: 20px;
+    color: white;
+}
