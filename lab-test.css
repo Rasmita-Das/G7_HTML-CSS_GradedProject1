@@ -3,12 +3,13 @@ body{
 }
 
 .textpart{
+    box-sizing: border-box;
     position: absolute;
     top: 5%;
     bottom: 10%; 
     left: 10%;
     right: 14%;
-    border: 5px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 4px;
     padding-left: 40px;
     overflow: auto;
@@ -17,6 +18,7 @@ body{
 
 input{
     width: 300px;
+    right: 50%;
     min-width: 100px;
     border: none;
     border-bottom: 2px;
@@ -32,7 +34,7 @@ option{
 }   
 
 img{
-    top: 5.6%;
+    top: 5.5%;
     bottom: 28%;
     left: 55%;
     position: fixed;
@@ -53,11 +55,6 @@ input:checked + label {
 }
 
 
-/*
-.datentime{
-
-}
-*/
 button{
     left: 0;
     right: 0;
@@ -71,18 +68,15 @@ button{
     border-radius: 4px;
     background-color: blueviolet;
     align-items: center;
-}
+}   
 
 h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-  
-  
-
-
-
+.foot{
+position: absolute;
+bottom: 5%;
+margin-left: 40%;
+margin-top: 20%;
+}
