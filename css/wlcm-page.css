@@ -50,17 +50,19 @@ header{
 }
 #Dropdown_1, #Dropdown_2 {
     position: absolute;
-    width: auto;
+    width: max-content;
     display: none;
     padding: 0%;
     background-color: lightcyan;
 }
 #Dropdown_1 li, #Dropdown_2 li {
+    width: 100%;
     display: block;
     margin-top: 20px;
 }
 
 #Dropdown_1 li a:hover, #Dropdown_2 li a:hover {
+    width: 74%;
     text-decoration: none;
     color: black;
     background-color: gainsboro;
