@@ -173,6 +173,8 @@ footer{
     width: 100%;
 }
 footer h5{
+    position: sticky;
+    bottom: 0;
     padding: 20px;
     color: white;
 }
