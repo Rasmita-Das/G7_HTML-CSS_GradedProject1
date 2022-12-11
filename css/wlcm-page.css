@@ -8,7 +8,8 @@ body{
     margin: 0%;
 }
 header{
-    background-color: rgb(45, 44, 44);
+    color: white;
+    background-color: rgb(67, 67, 67);
     text-align: center;
     background-size: cover;
     padding-top: 30px;
@@ -26,7 +27,7 @@ header{
     position: sticky;  
     width: 100%;
     padding: 10px 0px;  
-    background-color: grey;
+    background-color: rgb(148, 146, 146);
 }
 
 .menu li{
@@ -36,32 +37,29 @@ header{
 .menu li a{
     text-decoration: none;
     color: whitesmoke;
-    background-color: grey;
     padding: 7px 20px;
 }
 .menu li a:hover{
     color: white;
-    background-color: rgb(45, 44, 44);
+    background-color: rgb(41, 40, 40);
 }
 
 .menu li:nth-child(2):hover #Dropdown_1, 
 .menu li:nth-child(3):hover #Dropdown_2
 {
     display: block;
-   
+   background-color: rgba(254, 253, 253, 0.918);
 }
 #Dropdown_1, #Dropdown_2 {
     position: absolute;
     width: max-content;
     display: none;
     padding: 0%;
-    background-color: rgb(209, 209, 209);
 }
 #Dropdown_1 li, #Dropdown_2 li {
     width: 100%;
     display: block;
-    margin-top: 20px;
-    background-color: rgb(209, 209, 209);
+    margin-top: 10px;
 }
 
 #Dropdown_1 li a:hover, #Dropdown_2 li a:hover {
@@ -75,10 +73,9 @@ header{
 
 #Dropdown_1 li a, #Dropdown_2 li a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 115, 255);
     padding: 7px 20px;
     float: left;
-    background-color: rgb(209, 209, 209);
 }
 
 .slide{
@@ -127,7 +124,6 @@ header{
 .product{
     background-color: lightgrey;
     width: 21%;
-    
     display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
