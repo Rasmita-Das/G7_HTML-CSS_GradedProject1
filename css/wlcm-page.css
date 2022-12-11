@@ -46,7 +46,7 @@ header{
 .menu li:nth-child(3):hover #Dropdown_2
 {
     display: block;
-
+   
 }
 #Dropdown_1, #Dropdown_2 {
     position: absolute;
@@ -80,7 +80,7 @@ header{
 
 .slide{
     width: auto;
-    height: 550px;
+    height: 850px;
     border: solid steelblue 2px;
     background-size: cover;
     animation: slide 10s infinite;
@@ -123,21 +123,29 @@ header{
 }
 .product{
     background-color: lightgrey;
-    width: 24%;
-    height: 250px;
+    width: 21%;
+    
     display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: center;
+    margin-right: 3%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.product h4{
+    text-align: left;
+    font-size: larger;
+}
+
 .product img{
-    height: 100px;
-    width: 200px;
+    height: 230px;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .product p{
-    color: blue;
+    color: rgba(34, 61, 183, 0.83);
     text-align: left;
     margin-left: 25px;
 }
@@ -156,6 +164,7 @@ header{
 }
 .product button h3{
     color: orangered;
+    font-size: larger;
 }
 
 footer{
