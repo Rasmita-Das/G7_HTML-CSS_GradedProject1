@@ -1,20 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
     height: auto;
     margin: 0%;
 }
 header{
-    background-color: aqua;
+    background-color: rgb(45, 44, 44);
     text-align: center;
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: larger;
 }
 #navigate{
+    height: 30px;
     top: 0%;
     position: sticky;
 }
@@ -24,7 +26,7 @@ header{
     position: sticky;  
     width: 100%;
     padding: 10px 0px;  
-    background-color: black;
+    background-color: grey;
 }
 
 .menu li{
@@ -34,12 +36,12 @@ header{
 .menu li a{
     text-decoration: none;
     color: whitesmoke;
-    background-color: black;
+    background-color: grey;
     padding: 7px 20px;
 }
 .menu li a:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgb(45, 44, 44);
 }
 
 .menu li:nth-child(2):hover #Dropdown_1, 
@@ -53,19 +55,20 @@ header{
     width: max-content;
     display: none;
     padding: 0%;
-    background-color: lightcyan;
+    background-color: rgb(209, 209, 209);
 }
 #Dropdown_1 li, #Dropdown_2 li {
     width: 100%;
     display: block;
     margin-top: 20px;
+    background-color: rgb(209, 209, 209);
 }
 
 #Dropdown_1 li a:hover, #Dropdown_2 li a:hover {
     width: 74%;
     text-decoration: none;
     color: black;
-    background-color: gainsboro;
+    background-color: rgb(230, 230, 230);
     padding: 7px 20px;
     float: left;
 }
@@ -75,7 +78,7 @@ header{
     color: black;
     padding: 7px 20px;
     float: left;
-    background-color: lightcyan;
+    background-color: rgb(209, 209, 209);
 }
 
 .slide{
